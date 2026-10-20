@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Candy Hunters"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="res://Lil Bro/LilBro.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Lil Bro/icon.svg"
 
 [display]
 
