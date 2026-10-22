@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var move_speed : float = 150
+@export var move_speed : float = 130
 
 # quando a tecla da direita é pressionada, o valor "right" se torna positivo e vamos pra direita
 # se for pressionada "left" o valor é negativo, o que leva à esquerda. mesma coisa pra up e down

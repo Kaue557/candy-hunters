@@ -11,6 +11,7 @@ size = Vector2(12.5, 14.700002)
 [node name="NPC" type="CharacterBody2D" parent="." unique_id=433308330]
 scale = Vector2(10, 10)
 script = ExtResource("1_gxmj8")
+velocidade = 250.0
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC" unique_id=1082547224]
 position = Vector2(35.539997, 15.24)
