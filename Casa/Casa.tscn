@@ -1,3 +1,46 @@
 [gd_scene format=3 uid="uid://bfdg0l2s1s8a7"]
 
+[ext_resource type="PackedScene" uid="uid://bqbhlexmxtig7" path="res://NPC/NPC.tscn" id="1_s1ggj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
+size = Vector2(1934, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_su482"]
+size = Vector2(22, 1088)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mdxl"]
+size = Vector2(17, 1083)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kq0a"]
+size = Vector2(1937, 20)
+
 [node name="Casa" type="Area2D" unique_id=1115763633]
+
+[node name="Camera2D_mapa" type="Camera2D" parent="." unique_id=1380643570]
+position = Vector2(966, 539)
+
+[node name="Npc" parent="." unique_id=1590610735 instance=ExtResource("1_s1ggj")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
+
+[node name="colisao_superior" type="CollisionShape2D" parent="StaticBody2D" unique_id=2080137125]
+position = Vector2(957, 0)
+shape = SubResource("RectangleShape2D_eccsm")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=5490677]
+
+[node name="colisao_esq" type="CollisionShape2D" parent="StaticBody2D2" unique_id=750395986]
+position = Vector2(1, 534)
+shape = SubResource("RectangleShape2D_su482")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=182437541]
+
+[node name="colisao_dir" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1981626555]
+position = Vector2(1918.5, 531.5)
+shape = SubResource("RectangleShape2D_6mdxl")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=894315353]
+
+[node name="colisao_inferior" type="CollisionShape2D" parent="StaticBody2D4" unique_id=694810219]
+position = Vector2(958.5, 1080)
+shape = SubResource("RectangleShape2D_1kq0a")
