@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bfdg0l2s1s8a7"]
 
+[ext_resource type="Texture2D" uid="uid://5u0xrbih0uwt" path="res://Casa/mapa.jpeg" id="1_0pt8g"]
 [ext_resource type="PackedScene" uid="uid://bqbhlexmxtig7" path="res://NPC/NPC.tscn" id="1_s1ggj"]
 [ext_resource type="PackedScene" uid="uid://ds6tbrbnswp4d" path="res://Lil Bro/LilBro.tscn" id="2_8yjot"]
 
@@ -20,30 +21,10 @@ size = Vector2(1937, 20)
 [node name="Camera2D_mapa" type="Camera2D" parent="." unique_id=1380643570]
 position = Vector2(966, 539)
 
-[node name="NPC" parent="." unique_id=1590610735 instance=ExtResource("1_s1ggj")]
-position = Vector2(145, 62)
-
-[node name="Npc" parent="NPC" unique_id=1652921230 instance=ExtResource("1_s1ggj")]
-position = Vector2(1058, 368)
-
-[node name="Npc2" parent="NPC" unique_id=443209827 instance=ExtResource("1_s1ggj")]
-position = Vector2(401, -10)
-
-[node name="Npc3" parent="NPC" unique_id=1391206747 instance=ExtResource("1_s1ggj")]
-position = Vector2(-109, 585)
-
-[node name="Npc4" parent="NPC" unique_id=1172903921 instance=ExtResource("1_s1ggj")]
-position = Vector2(661, -33)
-
-[node name="Npc5" parent="NPC" unique_id=1343273196 instance=ExtResource("1_s1ggj")]
-position = Vector2(1021, -45)
-
-[node name="Npc6" parent="NPC" unique_id=1769423657 instance=ExtResource("1_s1ggj")]
-position = Vector2(103, 265)
-
-[node name="player1" parent="." unique_id=1383500913 instance=ExtResource("2_8yjot")]
-position = Vector2(1363, 922)
-scale = Vector2(0.47, 0.47)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=999636041]
+position = Vector2(958.9893, 544.5)
+scale = Vector2(2.0910852, 2.0910852)
+texture = ExtResource("1_0pt8g")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
 
@@ -68,3 +49,28 @@ shape = SubResource("RectangleShape2D_6mdxl")
 [node name="colisao_inferior" type="CollisionShape2D" parent="StaticBody2D4" unique_id=694810219]
 position = Vector2(958.5, 1080)
 shape = SubResource("RectangleShape2D_1kq0a")
+
+[node name="player1" parent="StaticBody2D4" unique_id=1383500913 instance=ExtResource("2_8yjot")]
+position = Vector2(1364, 910)
+scale = Vector2(0.47, 0.47)
+
+[node name="NPC" parent="." unique_id=1590610735 instance=ExtResource("1_s1ggj")]
+position = Vector2(145, 62)
+
+[node name="Npc" parent="NPC" unique_id=1652921230 instance=ExtResource("1_s1ggj")]
+position = Vector2(1058, 368)
+
+[node name="Npc2" parent="NPC" unique_id=443209827 instance=ExtResource("1_s1ggj")]
+position = Vector2(411, 8)
+
+[node name="Npc3" parent="NPC" unique_id=1391206747 instance=ExtResource("1_s1ggj")]
+position = Vector2(-109, 585)
+
+[node name="Npc4" parent="NPC" unique_id=1172903921 instance=ExtResource("1_s1ggj")]
+position = Vector2(661, -33)
+
+[node name="Npc5" parent="NPC" unique_id=1343273196 instance=ExtResource("1_s1ggj")]
+position = Vector2(1021, -45)
+
+[node name="Npc6" parent="NPC" unique_id=1769423657 instance=ExtResource("1_s1ggj")]
+position = Vector2(103, 265)

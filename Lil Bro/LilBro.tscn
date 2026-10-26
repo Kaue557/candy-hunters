@@ -6,7 +6,7 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0hol4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
-size = Vector2(300.4694, 360.56335)
+size = Vector2(300.4694, 158.64789)
 
 [node name="Node2D" type="Node2D" unique_id=1383500913]
 position = Vector2(684, 384)
@@ -27,6 +27,6 @@ scale = Vector2(0.37, 0.37)
 texture = ExtResource("2_t17e0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D" unique_id=300674897]
-position = Vector2(-18.62915, 22.835678)
+position = Vector2(-18.62915, 73.31456)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_eccsm")
