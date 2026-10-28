@@ -2,12 +2,23 @@
 extends CharacterBody2D
 
 @export var velocidade: float = 200.0
+@onready var sprite: Sprite2D = $Sprite2D
+
+# ESCOLHA DA FANTASIA ALEATORIAMENTE
+var fantasias: Array[Texture2D] = [
+	preload("res://NPC/esqueleto.png"),
+	preload("res://NPC/lobisomen.png"),
+	preload("res://NPC/vampiro.png"),
+	preload("res://NPC/zumbi.png")	
+]
 
 var direcao: Vector2 = Vector2.ZERO
 var tempo_restante: float = 0.0
 
-
 func _ready() -> void:
+	var indice = randi_range(0, fantasias.size() - 1)
+	sprite.texture = fantasias[indice]
+	
 	escolher_comportamento()
 
 # func seila(_nome) <- o underline significa "variável não usada"
