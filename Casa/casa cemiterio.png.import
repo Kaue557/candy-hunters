@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6cewhril5lgs"
-path="res://.godot/imported/mapav2.jpg-7d1b08b348426bb02a783680be6f27af.ctex"
+uid="uid://c88kdn2m2y16y"
+path="res://.godot/imported/casa cemiterio.png-dd6c9a0ae1cdf8a5279963aaf8b49583.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Casa/mapav2.jpg"
-dest_files=["res://.godot/imported/mapav2.jpg-7d1b08b348426bb02a783680be6f27af.ctex"]
+source_file="res://Casa/casa cemiterio.png"
+dest_files=["res://.godot/imported/casa cemiterio.png-dd6c9a0ae1cdf8a5279963aaf8b49583.ctex"]
 
 [params]
 
