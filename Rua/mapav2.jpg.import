@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwkes3lhxlcnk"
-path="res://.godot/imported/mapa.jpeg-c5997dc00d8d36192207b31ca178cb79.ctex"
+uid="uid://c6cewhril5lgs"
+path="res://.godot/imported/mapav2.jpg-831f14eeb35c3b3281556a3385430e9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Casa/mapa.jpeg"
-dest_files=["res://.godot/imported/mapa.jpeg-c5997dc00d8d36192207b31ca178cb79.ctex"]
+source_file="res://Rua/mapav2.jpg"
+dest_files=["res://.godot/imported/mapav2.jpg-831f14eeb35c3b3281556a3385430e9e.ctex"]
 
 [params]
 
