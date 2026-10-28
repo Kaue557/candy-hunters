@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ds6tbrbnswp4d"]
+
+[ext_resource type="Script" uid="uid://o7ryuw1lrvei" path="res://Lil_Bro/movimentacao_LilBro.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://d31jfl3lrhx5g" path="res://NPC/vampiro.png" id="2_t17e0"]
+
+[node name="Node2D" type="Node2D" unique_id=1383500913]
+position = Vector2(684, 384)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=678388271]
+position = Vector2(-320, -242)
+scale = Vector2(0.83203125, 0.83203125)
+collision_layer = 2
+script = ExtResource("1_0e48y")
+move_speed = 200.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1188997407]
+position = Vector2(-16.673233, 16.045078)
+scale = Vector2(6, 6)
+texture = ExtResource("2_t17e0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=1694363876]
+polygon = PackedVector2Array(-99.75589, -78.12207, -99.75589, 88.93898, -64.90143, 88.93898, -64.90143, 111.77464, -33.652588, 111.77464, -33.652588, 88.93898, 2.4037476, 88.93898, 2.4037476, 110.57277, 32.450684, 110.57277, 32.450684, 88.93898, 67.305145, 88.93898, 67.305145, -78.12207)
