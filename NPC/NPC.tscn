@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bqbhlexmxtig7"]
+
+[ext_resource type="Script" uid="uid://cj28pvn2bt6pv" path="res://NPC/movimentacao_npc.gd" id="1_gxmj8"]
+[ext_resource type="Texture2D" uid="uid://d3ckks16qcdps" path="res://NPC/lobisomen.png" id="2_gxmj8"]
+
+[node name="Node2D" type="Node2D" unique_id=1590610735]
+
+[node name="NPC" type="CharacterBody2D" parent="." unique_id=433308330]
+scale = Vector2(10, 10)
+collision_layer = 2
+script = ExtResource("1_gxmj8")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC" unique_id=1082547224]
+position = Vector2(35.539997, 15.24)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_gxmj8")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="NPC" unique_id=901747663]
+scale = Vector2(0.2, 0.2)
+polygon = PackedVector2Array(161, 57, 161, 90.5, 168, 90.5, 168, 95.5, 174, 95.5, 174, 90.5, 181, 90.5, 181, 95.5, 187.5, 95.5, 187.5, 90.5, 194.5, 90.5, 194.5, 57)

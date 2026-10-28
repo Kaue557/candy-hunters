@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://bfdg0l2s1s8a7"]
+[gd_scene format=3 uid="uid://d3rwkrjwppcyr"]
 
-[node name="Casa" type="Area2D" unique_id=1115763633]
+[ext_resource type="Script" uid="uid://bfba0f3hvwpqq" path="res://Casa/casa.gd" id="1_8yjot"]
+[ext_resource type="Texture2D" uid="uid://bld8pj1kj5m6s" path="res://Casa/abobra.png" id="2_0pt8g"]
+
+[node name="Casa" type="Area2D" unique_id=1188031046]
+script = ExtResource("1_8yjot")
+skin = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1926213657]
+scale = Vector2(2.07, 2.07)
+texture = ExtResource("2_0pt8g")
