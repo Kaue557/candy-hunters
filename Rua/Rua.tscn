@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c6cewhril5lgs" path="res://Rua/mapav2.jpg" id="1_mtrnv"]
 [ext_resource type="PackedScene" uid="uid://ds6tbrbnswp4d" path="res://Lil_Bro/LilBro.tscn" id="2_1qk0d"]
 [ext_resource type="PackedScene" uid="uid://bqbhlexmxtig7" path="res://NPC/NPC.tscn" id="3_4cd8y"]
-[ext_resource type="PackedScene" uid="uid://d3rwkrjwppcyr" path="res://Casa/Casa.tscn" id="4_1qk0d"]
+[ext_resource type="PackedScene" uid="uid://dnd75u8duiedt" path="res://Casa/Casa.tscn" id="4_1qk0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
 size = Vector2(1934, 20)
@@ -26,43 +26,66 @@ position = Vector2(966, 539)
 position = Vector2(958.9893, 544.5)
 scale = Vector2(1.8968525, 1.8968532)
 texture = ExtResource("1_mtrnv")
-
-[node name="player1" parent="." unique_id=1383500913 instance=ExtResource("2_1qk0d")]
-position = Vector2(1364, 910)
-scale = Vector2(0.47, 0.47)
+metadata/_edit_lock_ = true
 
 [node name="NPC" parent="." unique_id=1590610735 instance=ExtResource("3_4cd8y")]
-position = Vector2(145, 62)
+position = Vector2(202, 148)
+
+[node name="NPC2" parent="." unique_id=1491549387 instance=ExtResource("3_4cd8y")]
+position = Vector2(554, 60)
+
+[node name="NPC3" parent="." unique_id=690598622 instance=ExtResource("3_4cd8y")]
+position = Vector2(148, 552)
+
+[node name="NPC4" parent="." unique_id=2041066155 instance=ExtResource("3_4cd8y")]
+position = Vector2(978, 141)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
+metadata/_edit_lock_ = true
 
 [node name="colisao_superior" type="CollisionShape2D" parent="StaticBody2D" unique_id=2080137125]
 position = Vector2(957, 0)
 shape = SubResource("RectangleShape2D_eccsm")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=5490677]
+metadata/_edit_lock_ = true
 
 [node name="colisao_esq" type="CollisionShape2D" parent="StaticBody2D2" unique_id=750395986]
-position = Vector2(327, 534)
+position = Vector2(42, 534)
 shape = SubResource("RectangleShape2D_su482")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=182437541]
+metadata/_edit_lock_ = true
 
 [node name="colisao_dir" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1981626555]
-position = Vector2(1580.5, 531.5)
+position = Vector2(1863, 531.5)
 shape = SubResource("RectangleShape2D_6mdxl")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=894315353]
+metadata/_edit_lock_ = true
 
 [node name="colisao_inferior" type="CollisionShape2D" parent="StaticBody2D4" unique_id=694810219]
 position = Vector2(958.5, 1080)
 shape = SubResource("RectangleShape2D_1kq0a")
 
 [node name="Casa" parent="." unique_id=1188031046 instance=ExtResource("4_1qk0d")]
-position = Vector2(207, 93)
+position = Vector2(177, 97)
 
-[node name="Casa2" parent="." unique_id=1790315451 instance=ExtResource("4_1qk0d")]
-position = Vector2(203, 503)
+[node name="Casa2" parent="." unique_id=2076834809 instance=ExtResource("4_1qk0d")]
+position = Vector2(177, 503)
 
-[node name="Casa3" parent="." unique_id=826795801 instance=ExtResource("4_1qk0d")]
-position = Vector2(180, 881)
+[node name="Casa3" parent="." unique_id=878413942 instance=ExtResource("4_1qk0d")]
+position = Vector2(177, 883)
+
+[node name="Casa4" parent="." unique_id=1787549126 instance=ExtResource("4_1qk0d")]
+position = Vector2(1731, 97)
+
+[node name="Casa5" parent="." unique_id=1913553388 instance=ExtResource("4_1qk0d")]
+position = Vector2(1735, 503)
+
+[node name="Casa6" parent="." unique_id=663403 instance=ExtResource("4_1qk0d")]
+position = Vector2(1735, 883)
+
+[node name="player1" parent="." unique_id=1383500913 instance=ExtResource("2_1qk0d")]
+position = Vector2(1524, 820)
+scale = Vector2(0.47, 0.47)
