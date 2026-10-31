@@ -28,6 +28,7 @@ enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://Big_Bro/": "orange",
 "res://Casa/": "red",
 "res://Lil_Bro/": "blue",
 "res://NPC/": "teal",
