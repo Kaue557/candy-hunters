@@ -1,7 +1,13 @@
-[gd_scene format=3 uid="uid://d3rwkrjwppcyr"]
+[gd_scene format=3 uid="uid://dnd75u8duiedt"]
 
 [ext_resource type="Script" uid="uid://bfba0f3hvwpqq" path="res://Casa/casa.gd" id="1_8yjot"]
 [ext_resource type="Texture2D" uid="uid://bld8pj1kj5m6s" path="res://Casa/abobra.png" id="2_0pt8g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
+size = Vector2(256, 279)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
+size = Vector2(255, 44)
 
 [node name="Casa" type="Area2D" unique_id=1188031046]
 script = ExtResource("1_8yjot")
@@ -10,3 +16,15 @@ skin = 1
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1926213657]
 scale = Vector2(2.07, 2.07)
 texture = ExtResource("2_0pt8g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=257797917]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=639619082]
+position = Vector2(0, 56.5)
+shape = SubResource("RectangleShape2D_8cuor")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2071255656]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1363937948]
+position = Vector2(0.5, 222)
+shape = SubResource("RectangleShape2D_eccsm")

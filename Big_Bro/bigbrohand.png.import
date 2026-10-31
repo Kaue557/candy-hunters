@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c88kdn2m2y16y"
-path="res://.godot/imported/casa cemiterio.png-dd6c9a0ae1cdf8a5279963aaf8b49583.ctex"
+uid="uid://vp506isivwgu"
+path="res://.godot/imported/bigbrohand.png-517ca02203aeabfd7a21e616b5a7f8b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Casa/casa cemiterio.png"
-dest_files=["res://.godot/imported/casa cemiterio.png-dd6c9a0ae1cdf8a5279963aaf8b49583.ctex"]
+source_file="res://Big_Bro/bigbrohand.png"
+dest_files=["res://.godot/imported/bigbrohand.png-517ca02203aeabfd7a21e616b5a7f8b5.ctex"]
 
 [params]
 

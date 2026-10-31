@@ -13,7 +13,6 @@ config_version=5
 config/name="Candy Hunters"
 run/main_scene="uid://bfdg0l2s1s8a7"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://Lil Bro/icon.svg"
 
 [display]
 
@@ -29,6 +28,7 @@ enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://Big_Bro/": "orange",
 "res://Casa/": "red",
 "res://Lil_Bro/": "blue",
 "res://NPC/": "teal",
