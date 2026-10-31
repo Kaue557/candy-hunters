@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ds6tbrbnswp4d" path="res://Lil_Bro/LilBro.tscn" id="2_1qk0d"]
 [ext_resource type="PackedScene" uid="uid://bqbhlexmxtig7" path="res://NPC/NPC.tscn" id="3_4cd8y"]
 [ext_resource type="PackedScene" uid="uid://dnd75u8duiedt" path="res://Casa/Casa.tscn" id="4_1qk0d"]
+[ext_resource type="PackedScene" uid="uid://cuyfwoi0mkl2c" path="res://Big_Bro/BigBro.tscn" id="5_4cd8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
 size = Vector2(1934, 20)
@@ -41,28 +42,24 @@ position = Vector2(148, 552)
 position = Vector2(978, 141)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
-metadata/_edit_lock_ = true
 
 [node name="colisao_superior" type="CollisionShape2D" parent="StaticBody2D" unique_id=2080137125]
 position = Vector2(957, 0)
 shape = SubResource("RectangleShape2D_eccsm")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=5490677]
-metadata/_edit_lock_ = true
 
 [node name="colisao_esq" type="CollisionShape2D" parent="StaticBody2D2" unique_id=750395986]
 position = Vector2(42, 534)
 shape = SubResource("RectangleShape2D_su482")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=182437541]
-metadata/_edit_lock_ = true
 
 [node name="colisao_dir" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1981626555]
 position = Vector2(1863, 531.5)
 shape = SubResource("RectangleShape2D_6mdxl")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=894315353]
-metadata/_edit_lock_ = true
 
 [node name="colisao_inferior" type="CollisionShape2D" parent="StaticBody2D4" unique_id=694810219]
 position = Vector2(958.5, 1080)
@@ -89,3 +86,6 @@ position = Vector2(1735, 883)
 [node name="player1" parent="." unique_id=1383500913 instance=ExtResource("2_1qk0d")]
 position = Vector2(1524, 820)
 scale = Vector2(0.47, 0.47)
+
+[node name="BigBro" parent="." unique_id=998423178 instance=ExtResource("5_4cd8y")]
+position = Vector2(909, 613)

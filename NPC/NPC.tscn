@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://cj28pvn2bt6pv" path="res://NPC/movimentacao_npc.gd" id="1_gxmj8"]
 [ext_resource type="Texture2D" uid="uid://d3ckks16qcdps" path="res://NPC/lobisomen.png" id="2_gxmj8"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
+size = Vector2(67, 77.00003)
+
 [node name="Node2D" type="Node2D" unique_id=1590610735]
 
 [node name="NPC" type="CharacterBody2D" parent="." unique_id=433308330]
@@ -16,5 +19,15 @@ scale = Vector2(0.24, 0.24)
 texture = ExtResource("2_gxmj8")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="NPC" unique_id=901747663]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.19999997, 0.19999997)
 polygon = PackedVector2Array(161, 57, 161, 90.5, 168, 90.5, 168, 95.5, 174, 95.5, 174, 90.5, 181, 90.5, 181, 95.5, 187.5, 95.5, 187.5, 90.5, 194.5, 90.5, 194.5, 57)
+
+[node name="Area2D" type="Area2D" parent="NPC" unique_id=1528897834]
+scale = Vector2(0.099999994, 0.099999994)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Area2D" unique_id=1645546669]
+position = Vector2(355.4999, 152.49997)
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_8cuor")
+
+[connection signal="input_event" from="NPC/Area2D" to="NPC" method="_on_area_2d_input_event"]
