@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cuyfwoi0mkl2c"]
+
+[ext_resource type="Texture2D" uid="uid://vp506isivwgu" path="res://Big_Bro/bigbrohand.png" id="1_okqx2"]
+[ext_resource type="Script" uid="uid://bceq5gtpd4hc8" path="res://Big_Bro/big_bro.gd" id="1_sfi17"]
+
+[node name="BigBro" type="Node2D" unique_id=998423178]
+script = ExtResource("1_sfi17")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=60641330]
+scale = Vector2(3, 2.9999998)
+texture = ExtResource("1_okqx2")

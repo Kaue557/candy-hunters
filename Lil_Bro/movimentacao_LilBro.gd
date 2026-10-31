@@ -26,3 +26,10 @@ func _physics_process(_delta):
 	velocity = input_direction * move_speed
 	
 	move_and_slide()
+
+
+# DETECTA INPUT DO MOUSE
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if event is InputEventMouseButton:
+		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			print("LilBro selecionado!")

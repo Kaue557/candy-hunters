@@ -47,3 +47,9 @@ func escolher_comportamento() -> void:
 
 		# Anda por 1 a 4 segundos
 		tempo_restante = randf_range(1.0, 4.0)
+
+# DETECTA INPUT DO MOUSE
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if event is InputEventMouseButton:
+		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			print("NPC selecionado!")
