@@ -49,7 +49,8 @@ func escolher_comportamento() -> void:
 		tempo_restante = randf_range(1.0, 4.0)
 
 # DETECTA INPUT DO MOUSE
-func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			print("NPC selecionado!")
+			print("Clique esquerdo detectado!")
+			get_tree().get_first_node_in_group("BigBro").verificar_personagem("NPC")

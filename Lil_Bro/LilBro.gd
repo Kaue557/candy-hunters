@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var move_speed : float = 150
 @onready var sprite: Sprite2D = $Sprite2D
 
+
 # ESCOLHA DA FANTASIA ALEATORIAMENTE
 var fantasias: Array[Texture2D] = [
 	preload("res://Lil_Bro/esqueleto.png"),
@@ -32,4 +33,6 @@ func _physics_process(_delta):
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton:
 		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			print("LilBro selecionado!")
+			print("Clique esquerdo detectado!")
+			#get_tree().get_first_node_in_group("BigBro").verificar_personagem("LilBro")
+			get_tree().get_first_node_in_group("interface").encerrar_partida()

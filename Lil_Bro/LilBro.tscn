@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds6tbrbnswp4d"]
 
-[ext_resource type="Script" uid="uid://o7ryuw1lrvei" path="res://Lil_Bro/movimentacao_LilBro.gd" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://o7ryuw1lrvei" path="res://Lil_Bro/LilBro.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://d31jfl3lrhx5g" path="res://NPC/vampiro.png" id="2_t17e0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
@@ -24,10 +24,12 @@ texture = ExtResource("2_t17e0")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=1694363876]
 polygon = PackedVector2Array(-99.75589, -78.12207, -99.75589, 88.93898, -64.90143, 88.93898, -64.90143, 111.77464, -33.652588, 111.77464, -33.652588, 88.93898, 2.4037476, 88.93898, 2.4037476, 110.57277, 32.450684, 110.57277, 32.450684, 88.93898, 67.305145, 88.93898, 67.305145, -78.12207)
 
-[node name="Area2D" type="Area2D" parent="." unique_id=109351632]
+[node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=109351632]
+position = Vector2(384.60095, 290.85443)
+scale = Vector2(1.201878, 1.201878)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1046817979]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=1046817979]
 position = Vector2(-333, -228.5)
 shape = SubResource("RectangleShape2D_8cuor")
 
-[connection signal="input_event" from="Area2D" to="CharacterBody2D" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_input_event"]
