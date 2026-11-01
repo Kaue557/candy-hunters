@@ -6,7 +6,10 @@ extends Area2D
 var skins_casas: Array[Texture2D] = [
 	preload("res://Casa/abobra.png"),
 	preload("res://Casa/cabana.png"),
-	preload("res://Casa/casa_cemiterio.png")
+	preload("res://Casa/casa_cemiterio.png"),
+	preload("res://Casa/casa_aranha.png"),
+	preload("res://Casa/circo.png"),
+	preload("res://Casa/castelo.png")
 ]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
