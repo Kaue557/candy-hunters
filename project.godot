@@ -30,10 +30,15 @@ enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 folder_colors={
 "res://Big_Bro/": "orange",
 "res://Casa/": "red",
+"res://Interface/": "purple",
 "res://Lil_Bro/": "blue",
 "res://NPC/": "teal",
 "res://Rua/": "gray"
 }
+
+[global_group]
+
+BigBro=""
 
 [input]
 

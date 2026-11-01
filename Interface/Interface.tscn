@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cgyt8wv80vj0h"]
+
+[ext_resource type="Script" uid="uid://crvjghfsob0h8" path="res://Interface/interface.gd" id="1_tnt0s"]
+[ext_resource type="Texture2D" uid="uid://0nx4xxlt3qvr" path="res://Interface/botao_jogar.png" id="2_7ljt0"]
+[ext_resource type="Texture2D" uid="uid://brntp0vvpa8uw" path="res://Interface/botao_reiniciar.png" id="3_iiqm2"]
+
+[node name="Interface" type="Control" unique_id=1655976082]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_tnt0s")
+metadata/_edit_vertical_guides_ = [958.0]
+metadata/_edit_horizontal_guides_ = [541.0]
+
+[node name="MenuInicial" type="Control" parent="." unique_id=231982443]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Iniciar" type="Button" parent="MenuInicial" unique_id=1841442618]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 468.0
+offset_right = 1222.0
+offset_bottom = 620.0
+icon = ExtResource("2_7ljt0")
+flat = true
+
+[node name="HUD" type="Control" parent="." unique_id=399569921]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Tentativas" type="HBoxContainer" parent="HUD" unique_id=1284027038]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="HUD/Tentativas" unique_id=497701247]
+layout_mode = 2
+
+[node name="NumeroTentativas" type="Label" parent="HUD/Tentativas" unique_id=2122852718]
+layout_mode = 2
+
+[node name="GameOver" type="Control" parent="." unique_id=695180349]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="GameOver" unique_id=727315586]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Reiniciar" type="Button" parent="GameOver" unique_id=8673523]
+layout_mode = 0
+offset_left = 704.0
+offset_top = 585.0
+offset_right = 1224.0
+offset_bottom = 737.0
+icon = ExtResource("3_iiqm2")
+flat = true
+
+[connection signal="pressed" from="MenuInicial/Iniciar" to="." method="_on_botao_iniciar_pressed"]
+[connection signal="pressed" from="GameOver/Reiniciar" to="." method="_on_botao_reiniciar_pressed"]

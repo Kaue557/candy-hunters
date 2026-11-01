@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqbhlexmxtig7"]
 
-[ext_resource type="Script" uid="uid://cj28pvn2bt6pv" path="res://NPC/movimentacao_npc.gd" id="1_gxmj8"]
+[ext_resource type="Script" uid="uid://cj28pvn2bt6pv" path="res://NPC/npc.gd" id="1_gxmj8"]
 [ext_resource type="Texture2D" uid="uid://d3ckks16qcdps" path="res://NPC/lobisomen.png" id="2_gxmj8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
