@@ -1,7 +1,7 @@
 
 extends CharacterBody2D
 
-@export var velocidade: float = 200.0
+@export var velocidade: float = 210.0
 @onready var sprite: Sprite2D = $Sprite2D
 
 # ESCOLHA DA FANTASIA ALEATORIAMENTE

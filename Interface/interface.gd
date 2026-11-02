@@ -4,12 +4,16 @@ extends Control
 @onready var hud = $HUD
 @onready var game_over = $GameOver
 @onready var big_bro = get_tree().get_first_node_in_group("BigBro")
+@onready var background_music = $"../../Audio/background_music"
 
 
 func _ready():
 	add_to_group("interface")
 
-	
+	#if not background_music.playing:
+	Audio.play_music()
+		#background_music.play()
+		
 	menu_inicial.show()
 	hud.hide()
 	game_over.hide()

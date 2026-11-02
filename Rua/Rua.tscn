@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://bfdg0l2s1s8a7"]
 
-[ext_resource type="Texture2D" uid="uid://c6cewhril5lgs" path="res://Rua/mapav2.jpg" id="1_mtrnv"]
+[ext_resource type="Texture2D" uid="uid://bak477qwnsj5f" path="res://Rua/mapav3.jpeg" id="1_kfk0e"]
 [ext_resource type="PackedScene" uid="uid://ds6tbrbnswp4d" path="res://Lil_Bro/LilBro.tscn" id="2_1qk0d"]
+[ext_resource type="AudioStream" uid="uid://3hmtkmbj2ad0" path="res://Sons/BLACKHEART_Stage.mp3" id="2_8j2fe"]
 [ext_resource type="PackedScene" uid="uid://bqbhlexmxtig7" path="res://NPC/NPC.tscn" id="3_4cd8y"]
 [ext_resource type="PackedScene" uid="uid://dnd75u8duiedt" path="res://Casa/Casa.tscn" id="4_1qk0d"]
 [ext_resource type="PackedScene" uid="uid://cuyfwoi0mkl2c" path="res://Big_Bro/BigBro.tscn" id="5_4cd8y"]
+[ext_resource type="PackedScene" uid="uid://soxr1ik3bulx" path="res://Sons/audio.tscn" id="6_8j2fe"]
 [ext_resource type="PackedScene" uid="uid://cgyt8wv80vj0h" path="res://Interface/Interface.tscn" id="6_kfk0e"]
+[ext_resource type="AudioStream" uid="uid://beofbpovsnlq2" path="res://Sons/justsomesounds-candy-wrappings.mp3" id="8_28wa3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
 size = Vector2(1934, 20)
@@ -27,8 +30,8 @@ metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=999636041]
 position = Vector2(958.9893, 544.5)
-scale = Vector2(1.8968525, 1.8968532)
-texture = ExtResource("1_mtrnv")
+scale = Vector2(0.71, 0.71)
+texture = ExtResource("1_kfk0e")
 metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
@@ -88,7 +91,7 @@ position = Vector2(202, 148)
 metadata/_edit_lock_ = true
 
 [node name="NPC2" parent="." unique_id=1491549387 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(554, 60)
+position = Vector2(554, -11)
 metadata/_edit_lock_ = true
 
 [node name="NPC3" parent="." unique_id=690598622 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
@@ -97,6 +100,10 @@ metadata/_edit_lock_ = true
 
 [node name="NPC4" parent="." unique_id=2041066155 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
 position = Vector2(978, 141)
+metadata/_edit_lock_ = true
+
+[node name="NPC5" parent="." unique_id=631090658 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
+position = Vector2(553, 774)
 metadata/_edit_lock_ = true
 
 [node name="LilBro" parent="." unique_id=1383500913 instance=ExtResource("2_1qk0d")]
@@ -108,6 +115,15 @@ metadata/_edit_lock_ = true
 position = Vector2(909, 613)
 metadata/_edit_lock_ = true
 
+[node name="Audio" parent="." unique_id=1145624275 instance=ExtResource("6_8j2fe")]
+
+[node name="BlackheartStage" type="AudioStreamPlayer" parent="Audio" unique_id=1024140197]
+stream = ExtResource("2_8j2fe")
+
+[node name="JustsomesoundsCandyWrappings" type="AudioStreamPlayer" parent="Audio" unique_id=733348479]
+stream = ExtResource("8_28wa3")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1906170572]
 
 [node name="Interface" parent="CanvasLayer" unique_id=1655976082 instance=ExtResource("6_kfk0e")]
+metadata/_edit_lock_ = true
