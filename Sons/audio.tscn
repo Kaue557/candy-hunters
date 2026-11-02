@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://soxr1ik3bulx"]
+
+[ext_resource type="Script" uid="uid://dfb5rxnvd1ajf" path="res://Sons/audio.gd" id="1_2s5rp"]
+[ext_resource type="AudioStream" uid="uid://3hmtkmbj2ad0" path="res://Sons/BLACKHEART_Stage.mp3" id="2_o6ef2"]
+[ext_resource type="AudioStream" uid="uid://beofbpovsnlq2" path="res://Sons/justsomesounds-candy-wrappings.mp3" id="3_pi7en"]
+
+[node name="Audio" type="Node2D" unique_id=1145624275]
+script = ExtResource("1_2s5rp")
+
+[node name="background_music" type="AudioStreamPlayer2D" parent="." unique_id=1850599072]
+stream = ExtResource("2_o6ef2")
+
+[node name="candy_effect" type="AudioStreamPlayer2D" parent="." unique_id=828875003]
+stream = ExtResource("3_pi7en")

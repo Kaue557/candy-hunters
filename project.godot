@@ -14,6 +14,10 @@ config/name="Candy Hunters"
 run/main_scene="uid://bfdg0l2s1s8a7"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
+[autoload]
+
+Audio="*uid://soxr1ik3bulx"
+
 [display]
 
 window/size/viewport_width=1920
@@ -33,7 +37,8 @@ folder_colors={
 "res://Interface/": "purple",
 "res://Lil_Bro/": "blue",
 "res://NPC/": "teal",
-"res://Rua/": "gray"
+"res://Rua/": "gray",
+"res://Sons/": "pink"
 }
 
 [global_group]

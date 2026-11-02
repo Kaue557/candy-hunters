@@ -26,9 +26,9 @@ grow_vertical = 2
 
 [node name="Iniciar" type="Button" parent="MenuInicial" unique_id=1841442618]
 layout_mode = 0
-offset_left = 702.0
+offset_left = 650.0
 offset_top = 468.0
-offset_right = 1222.0
+offset_right = 1170.0
 offset_bottom = 620.0
 icon = ExtResource("2_7ljt0")
 flat = true
@@ -69,10 +69,10 @@ offset_bottom = 23.0
 
 [node name="Reiniciar" type="Button" parent="GameOver" unique_id=8673523]
 layout_mode = 0
-offset_left = 704.0
-offset_top = 585.0
-offset_right = 1224.0
-offset_bottom = 737.0
+offset_left = 650.0
+offset_top = 468.0
+offset_right = 1170.0
+offset_bottom = 620.0
 icon = ExtResource("3_iiqm2")
 flat = true
 
