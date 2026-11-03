@@ -1,7 +1,9 @@
-extends Area2D
+extends Node2D
 
 @export var skin : int = 0
 @onready var sprite: Sprite2D = $Sprite2D
+@onready var area: Area2D = $Area2D
+var doce_ativo = false
 
 var skins_casas: Array[Texture2D] = [
 	preload("res://Casa/abobra.png"),
@@ -13,13 +15,18 @@ var skins_casas: Array[Texture2D] = [
 ]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("Casa iniciada")
-	
-	var indice = randi_range(0, skins_casas.size() - 1)
-	sprite.texture = skins_casas[indice]
+	area.body_entered.connect(_on_area_body_entered)
 
-	print("Textura selecionada: ", sprite.texture)
+	sprite.texture = skins_casas[skin]
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	#var indice = randi_range(0, skins_casas.size() - 1)
+	#sprite.texture = skins_casas[indice]
+
+	#print("Textura selecionada: ", sprite.texture)
+
+func _on_area_body_entered(body):
+	print("Detectado: ", body.name)
+	print("Pertence ao grupo jogabilidade? ", body.is_in_group("jogabilidade"))
+	
+	if body.is_in_group("jogabilidade") and not doce_ativo:
+		doce_ativo = true
