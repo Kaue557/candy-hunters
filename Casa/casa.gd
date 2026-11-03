@@ -26,7 +26,7 @@ func _ready() -> void:
 
 func _on_area_body_entered(body):
 	print("Detectado: ", body.name)
-	print("Pertence ao grupo jogabilidade? ", body.is_in_group("jogabilidade"))
+	#print("Pertence ao grupo jogabilidade? ", body.is_in_group("jogabilidade"))
 	
 	if body.is_in_group("jogabilidade") and not doce_ativo:
 		doce_ativo = true

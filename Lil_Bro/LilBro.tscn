@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d31jfl3lrhx5g" path="res://NPC/vampiro.png" id="2_t17e0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
-size = Vector2(138, 157)
+size = Vector2(160, 176.99994)
 
 [node name="Node2D" type="Node2D" unique_id=1383500913]
 position = Vector2(684, 384)

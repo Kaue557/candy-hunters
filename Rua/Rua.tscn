@@ -28,139 +28,212 @@ position = Vector2(966, 539)
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=999636041]
-position = Vector2(958.9893, 544.5)
-scale = Vector2(0.7102861, 0.71028644)
+position = Vector2(990.00006, 544.5)
+scale = Vector2(0.78320223, 0.7832031)
 texture = ExtResource("1_kfk0e")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1830551902]
 metadata/_edit_lock_ = true
 
 [node name="colisao_superior" type="CollisionShape2D" parent="StaticBody2D" unique_id=2080137125]
-position = Vector2(957, 0)
+position = Vector2(957, -10)
 shape = SubResource("RectangleShape2D_eccsm")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=5490677]
+position = Vector2(-85, 0)
 metadata/_edit_lock_ = true
 
 [node name="colisao_esq" type="CollisionShape2D" parent="StaticBody2D2" unique_id=750395986]
 position = Vector2(42, 534)
 shape = SubResource("RectangleShape2D_su482")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=182437541]
+position = Vector2(75, 0)
 metadata/_edit_lock_ = true
 
 [node name="colisao_dir" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1981626555]
 position = Vector2(1863, 531.5)
 shape = SubResource("RectangleShape2D_6mdxl")
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=894315353]
+position = Vector2(0, 5)
 metadata/_edit_lock_ = true
 
 [node name="colisao_inferior" type="CollisionShape2D" parent="StaticBody2D4" unique_id=694810219]
 position = Vector2(958.5, 1080)
 shape = SubResource("RectangleShape2D_1kq0a")
+metadata/_edit_lock_ = true
 
 [node name="NPC" parent="." unique_id=1590610735 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(202, 148)
-metadata/_edit_lock_ = true
+position = Vector2(598, 397)
 
 [node name="NPC2" parent="." unique_id=1491549387 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(554, -11)
-metadata/_edit_lock_ = true
+position = Vector2(601, 396)
 
 [node name="NPC3" parent="." unique_id=690598622 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(148, 552)
-metadata/_edit_lock_ = true
+position = Vector2(598, 396)
 
 [node name="NPC4" parent="." unique_id=2041066155 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(978, 141)
-metadata/_edit_lock_ = true
+position = Vector2(596, 402)
 
 [node name="NPC5" parent="." unique_id=631090658 groups=["jogabilidade"] instance=ExtResource("3_4cd8y")]
-position = Vector2(553, 774)
-metadata/_edit_lock_ = true
+position = Vector2(598, 400)
 
 [node name="LilBro" parent="." unique_id=1383500913 instance=ExtResource("2_1qk0d")]
-position = Vector2(1524, 820)
+position = Vector2(1109, 659.99994)
 scale = Vector2(0.47, 0.47)
-metadata/_edit_lock_ = true
 
 [node name="Casas" type="Node2D" parent="." unique_id=1245277609]
+metadata/_edit_lock_ = true
 
 [node name="Casa" parent="Casas" unique_id=1188031046 instance=ExtResource("4_1qk0d")]
-position = Vector2(192, 91)
+position = Vector2(107, 83)
 skin = 0
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa/StaticBody2D" parent_id_path=PackedInt32Array(1188031046, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(0, 63)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa/Area2D" parent_id_path=PackedInt32Array(1188031046, 2071255656) index="0" unique_id=1363937948]
+[node name="Area2D" parent="Casas/Casa" index="2" unique_id=2071255656]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa/Area2D" index="0" unique_id=1363937948]
 position = Vector2(0.5, 227.5)
+metadata/_edit_lock_ = true
 
 [node name="Casa2" parent="Casas" unique_id=858908388 instance=ExtResource("4_1qk0d")]
-position = Vector2(187, 498)
+position = Vector2(125, 498)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa2/StaticBody2D" parent_id_path=PackedInt32Array(858908388, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa2" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa2" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa2/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(11, 25)
 scale = Vector2(1.2, 1)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa2/Area2D" parent_id_path=PackedInt32Array(858908388, 2071255656) index="0" unique_id=1363937948]
+[node name="Area2D" parent="Casas/Casa2" index="2" unique_id=2071255656]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa2/Area2D" index="0" unique_id=1363937948]
 position = Vector2(8, 192)
 scale = Vector2(1.2, 1)
+metadata/_edit_lock_ = true
 
 [node name="Casa3" parent="Casas" unique_id=314306267 instance=ExtResource("4_1qk0d")]
-position = Vector2(230, 903.99994)
+position = Vector2(151, 903.99994)
 scale = Vector2(1.05, 1.05)
 skin = 5
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa3/StaticBody2D" parent_id_path=PackedInt32Array(314306267, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa3" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa3" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa3/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(-10.476194, 28.571486)
 scale = Vector2(1.35, 0.9)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa3/Area2D" parent_id_path=PackedInt32Array(314306267, 2071255656) index="0" unique_id=1363937948]
+[node name="Area2D" parent="Casas/Casa3" index="2" unique_id=2071255656]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa3/Area2D" index="0" unique_id=1363937948]
 position = Vector2(187.61905, 25.714338)
 rotation = 1.5707964
 scale = Vector2(0.95, 1)
+metadata/_edit_lock_ = true
 
 [node name="Casa4" parent="Casas" unique_id=1247618007 instance=ExtResource("4_1qk0d")]
-position = Vector2(1740.0001, 916.00006)
+position = Vector2(1804.0001, 924)
 scale = Vector2(1.3, 1.3)
 skin = 3
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa4/StaticBody2D" parent_id_path=PackedInt32Array(1247618007, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa4" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa4" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa4/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(-15.38471, 11.538408)
 scale = Vector2(0.9, 0.65)
+metadata/_edit_lock_ = true
 
 [node name="Area2D" parent="Casas/Casa4" index="2" unique_id=2071255656]
 position = Vector2(-16.153942, 0)
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" parent="Casas/Casa4/Area2D" index="0" unique_id=1363937948]
 position = Vector2(-144.61542, 13.0768795)
 rotation = 1.5707964
 scale = Vector2(0.7, 1)
+metadata/_edit_lock_ = true
 
 [node name="Casa5" parent="Casas" unique_id=1123768668 instance=ExtResource("4_1qk0d")]
-position = Vector2(1721, 548)
+position = Vector2(1796.9999, 548)
 scale = Vector2(1.1, 1.1)
 skin = 2
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa5/StaticBody2D" parent_id_path=PackedInt32Array(1123768668, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa5" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa5" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa5/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(-2.727274, 15.454549)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa5/Area2D" parent_id_path=PackedInt32Array(1123768668, 2071255656) index="0" unique_id=1363937948]
+[node name="Area2D" parent="Casas/Casa5" index="2" unique_id=2071255656]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa5/Area2D" index="0" unique_id=1363937948]
 position = Vector2(-4.545496, 181.81818)
+metadata/_edit_lock_ = true
 
 [node name="Casa6" parent="Casas" unique_id=1050652822 instance=ExtResource("4_1qk0d")]
-position = Vector2(1707, 156)
+position = Vector2(1776.0001, 138)
 scale = Vector2(1.15, 1.15)
 skin = 4
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa6/StaticBody2D" parent_id_path=PackedInt32Array(1050652822, 257797917) index="0" unique_id=639619082]
+[node name="Sprite2D" parent="Casas/Casa6" index="0" unique_id=1926213657]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" parent="Casas/Casa6" index="1" unique_id=257797917]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa6/StaticBody2D" index="0" unique_id=639619082]
 position = Vector2(-2.608696, 6.086958)
 scale = Vector2(1, 0.8)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" parent="Casas/Casa6/Area2D" parent_id_path=PackedInt32Array(1050652822, 2071255656) index="0" unique_id=1363937948]
+[node name="Area2D" parent="Casas/Casa6" index="2" unique_id=2071255656]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" parent="Casas/Casa6/Area2D" index="0" unique_id=1363937948]
 position = Vector2(-5.21735, 138.26088)
+metadata/_edit_lock_ = true
 
 [node name="BigBro" parent="." unique_id=998423178 groups=["jogabilidade"] instance=ExtResource("5_4cd8y")]
 position = Vector2(909, 613)
@@ -175,7 +248,6 @@ stream = ExtResource("2_8j2fe")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1906170572]
 
 [node name="Interface" parent="CanvasLayer" unique_id=1655976082 instance=ExtResource("6_kfk0e")]
-metadata/_edit_lock_ = true
 
 [editable path="Casas/Casa"]
 [editable path="Casas/Casa2"]

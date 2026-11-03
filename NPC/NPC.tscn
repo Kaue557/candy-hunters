@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d3ckks16qcdps" path="res://NPC/lobisomen.png" id="2_gxmj8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8cuor"]
-size = Vector2(67, 77.00003)
+size = Vector2(81.00067, 82.99977)
 
 [node name="Node2D" type="Node2D" unique_id=1590610735]
 
@@ -26,8 +26,8 @@ polygon = PackedVector2Array(161, 57, 161, 90.5, 168, 90.5, 168, 95.5, 174, 95.5
 scale = Vector2(0.099999994, 0.099999994)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Area2D" unique_id=1645546669]
-position = Vector2(355.4999, 152.49997)
-scale = Vector2(0.9999999, 0.9999999)
+position = Vector2(355.49966, 152.49985)
+scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("RectangleShape2D_8cuor")
 
 [connection signal="input_event" from="NPC/Area2D" to="NPC" method="_on_area_2d_input_event"]
