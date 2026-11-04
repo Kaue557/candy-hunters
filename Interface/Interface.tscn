@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://crvjghfsob0h8" path="res://Interface/interface.gd" id="1_tnt0s"]
 [ext_resource type="Texture2D" uid="uid://0nx4xxlt3qvr" path="res://Interface/botao_jogar.png" id="2_7ljt0"]
 [ext_resource type="Texture2D" uid="uid://brntp0vvpa8uw" path="res://Interface/botao_reiniciar.png" id="3_iiqm2"]
+[ext_resource type="Texture2D" uid="uid://4pt5sa12dljp" path="res://Interface/lilbro.png" id="4_iiqm2"]
+[ext_resource type="Texture2D" uid="uid://cep73ntq0wixg" path="res://Interface/bigbro.png" id="5_bs6tl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_231fj"]
+font_size = 24
 
 [node name="Interface" type="Control" unique_id=1655976082]
 layout_mode = 3
@@ -15,6 +20,7 @@ mouse_filter = 2
 script = ExtResource("1_tnt0s")
 metadata/_edit_vertical_guides_ = [958.0]
 metadata/_edit_horizontal_guides_ = [541.0]
+metadata/_edit_lock_ = true
 
 [node name="MenuInicial" type="Control" parent="." unique_id=231982443]
 layout_mode = 1
@@ -23,15 +29,39 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="Iniciar" type="Button" parent="MenuInicial" unique_id=1841442618]
 layout_mode = 0
-offset_left = 650.0
+offset_left = 742.0
 offset_top = 468.0
-offset_right = 1170.0
+offset_right = 1262.0
 offset_bottom = 620.0
 icon = ExtResource("2_7ljt0")
 flat = true
+
+[node name="LilBro" type="Sprite2D" parent="MenuInicial" unique_id=1811166895]
+position = Vector2(944, 353.00003)
+scale = Vector2(8.3125, 8.3125)
+texture = ExtResource("4_iiqm2")
+metadata/_edit_lock_ = true
+
+[node name="BigBro" type="Sprite2D" parent="MenuInicial" unique_id=984114741]
+position = Vector2(1095, 340)
+scale = Vector2(6.3125, 6.3125)
+texture = ExtResource("5_bs6tl")
+metadata/_edit_lock_ = true
+
+[node name="tutorial" type="Label" parent="MenuInicial" unique_id=790345691]
+texture_filter = 1
+layout_mode = 0
+offset_left = 702.0
+offset_top = 56.0
+offset_right = 1134.3479
+offset_bottom = 169.0
+label_settings = SubResource("LabelSettings_231fj")
+vertical_alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="HUD" type="Control" parent="." unique_id=399569921]
 layout_mode = 1
@@ -41,19 +71,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_lock_ = true
 
 [node name="Tentativas" type="HBoxContainer" parent="HUD" unique_id=1284027038]
+texture_filter = 1
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="HUD/Tentativas" unique_id=497701247]
-layout_mode = 2
+offset_left = 840.0
+offset_top = 11.000002
+offset_right = 886.0
+offset_bottom = 45.0
+scale = Vector2(3, 3)
+alignment = 1
 
 [node name="NumeroTentativas" type="Label" parent="HUD/Tentativas" unique_id=2122852718]
+texture_filter = 1
 layout_mode = 2
+label_settings = SubResource("LabelSettings_231fj")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="GameOver" type="Control" parent="." unique_id=695180349]
+[node name="GameOver1" type="Control" parent="." unique_id=695180349]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -61,20 +98,57 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="GameOver" unique_id=727315586]
+[node name="Label" type="Label" parent="GameOver1" unique_id=727315586]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+metadata/_edit_lock_ = true
 
-[node name="Reiniciar" type="Button" parent="GameOver" unique_id=8673523]
+[node name="Reiniciar" type="Button" parent="GameOver1" unique_id=8673523]
 layout_mode = 0
-offset_left = 650.0
+offset_left = 741.0
 offset_top = 468.0
-offset_right = 1170.0
+offset_right = 1261.0
 offset_bottom = 620.0
 icon = ExtResource("3_iiqm2")
 flat = true
 
+[node name="LilBro" type="Sprite2D" parent="GameOver1" unique_id=1945170741]
+position = Vector2(1164, 353.00003)
+scale = Vector2(8.3125, 8.3125)
+texture = ExtResource("4_iiqm2")
+
+[node name="GameOver2" type="Control" parent="." unique_id=2003616267]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="GameOver2" unique_id=553934622]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Reiniciar" type="Button" parent="GameOver2" unique_id=1777825516]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 468.0
+offset_right = 1261.0
+offset_bottom = 620.0
+icon = ExtResource("3_iiqm2")
+flat = true
+
+[node name="BigBro" type="Sprite2D" parent="GameOver2" unique_id=357355979]
+position = Vector2(850.99994, 340)
+scale = Vector2(6.3125, 6.3125)
+texture = ExtResource("5_bs6tl")
+
 [connection signal="pressed" from="MenuInicial/Iniciar" to="." method="_on_botao_iniciar_pressed"]
-[connection signal="pressed" from="GameOver/Reiniciar" to="." method="_on_botao_reiniciar_pressed"]
+[connection signal="pressed" from="GameOver1/Reiniciar" to="." method="_on_botao_reiniciar_pressed"]
+[connection signal="pressed" from="GameOver2/Reiniciar" to="." method="_on_botao_reiniciar_pressed"]

@@ -9,7 +9,7 @@ size = Vector2(256, 279)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eccsm"]
 size = Vector2(255, 44)
 
-[node name="Casa" type="Area2D" unique_id=1188031046]
+[node name="Casa" type="Node2D" unique_id=1624865204]
 script = ExtResource("1_8yjot")
 skin = 1
 
@@ -20,10 +20,11 @@ texture = ExtResource("2_0pt8g")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=257797917]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=639619082]
-position = Vector2(0, 56.5)
+position = Vector2(0, 57.5)
 shape = SubResource("RectangleShape2D_8cuor")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2071255656]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1363937948]
 position = Vector2(0.5, 222)

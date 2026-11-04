@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dfb5rxnvd1ajf" path="res://Sons/audio.gd" id="1_2s5rp"]
 [ext_resource type="AudioStream" uid="uid://3hmtkmbj2ad0" path="res://Sons/BLACKHEART_Stage.mp3" id="2_o6ef2"]
-[ext_resource type="AudioStream" uid="uid://beofbpovsnlq2" path="res://Sons/justsomesounds-candy-wrappings.mp3" id="3_pi7en"]
+[ext_resource type="AudioStream" uid="uid://beofbpovsnlq2" path="res://Sons/CandyEffect.mp3" id="3_pi7en"]
 
 [node name="Audio" type="Node2D" unique_id=1145624275]
 script = ExtResource("1_2s5rp")
